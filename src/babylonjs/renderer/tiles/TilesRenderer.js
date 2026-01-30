@@ -199,6 +199,7 @@ export class TilesRenderer extends TilesRendererBase {
 
 		cached.group = group;
 		cached.container = result.container;
+		cached.metadata = result.metadata || null;
 
 	}
 
@@ -212,6 +213,7 @@ export class TilesRenderer extends TilesRendererBase {
 			cached.container.dispose();
 			cached.container = null;
 			cached.group = null;
+			cached.metadata = null;
 
 		}
 
